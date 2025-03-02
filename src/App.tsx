@@ -54,7 +54,7 @@ export default function App() {
 
         const parseResult = responseSchema.safeParse(data);
         if (!parseResult.success) {
-          throw new Error('Data validation failed.'); // TODO: Include zod errors?
+          throw new Error('Data validation failed.');
         }
         const validatedData = parseResult.data;
 
